@@ -6,7 +6,7 @@ abstract class AbstractOperation {
     abstract fun operate(num1:Int, num2: Int):Double
 }
 
-class Calculator() {
+class Calculator {
     fun operate(operator:AbstractOperation,num1: Int, num2: Int): Double {
         return operator.operate(num1,num2)
     }
